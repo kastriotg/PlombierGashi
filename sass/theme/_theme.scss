@@ -1,0 +1,1306 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.brendi{
+    padding-top: 10px;
+    font-size: 1.7em!important;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.align-center{
+    text-align: center;
+    padding: 0.5em 0;
+    color: #ed0000;
+    font-size: 3em!important;
+}
+#logo-img{
+    padding-top: 12px;
+    padding-left: 5px;
+    margin-right: 15px!important;
+    width: 40px!important;
+    height: 40px!important;
+}
+#navbarNavDropdown{
+    font-size: 0.8em!important;
+    justify-content: center;
+}
+nav{
+    display: flex!important;
+    flex-direction: column!important;
+}
+.container{
+    width: 100%!important;
+}
+#main-nav{
+    padding: 0 8px;
+
+}
+
+.nav-link[aria-current] {
+    background-color: #1d3557;
+    padding-top: 25px!important;
+    padding-bottom: 25px;
+}
+.nav-link{
+    padding-top: 25px!important;
+
+}
+.wrapper{
+    padding: 0;
+}
+//End of Header style
+.hideImg{
+    display: none;
+}
+
+//Accueil Template Style
+.description{
+    display: flex;
+    background-color:#eaeaea;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .left-side{
+        width: 50%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #6c63ff!important;
+        :first-child{
+            font-size: 1.8em;
+        }
+        :nth-child(2){
+            font-size: 1.2em;
+        }
+        a{
+            color:#6c63ff;
+        }
+        :nth-child(3){
+            font-size: 1.9em;
+            color:#1d3557!important;
+        }
+    }
+    .right-side{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 300px;
+            height: 230px;
+        }
+    }
+}
+
+#primary{
+    width: 100%;
+}
+.row{
+    margin: 0;
+    max-width: 100%;
+}
+
+#accueil-boxes{
+    background-color: #ed0000;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap:1rem;
+    a{  
+        color: #fff;
+        .boxes-a{
+            background-color: rgba($color: #fdfdfd, $alpha: 0.15);
+            width: 14rem;
+            height: 10rem;
+            padding: 1rem;
+            border-radius: 5px;
+            h3{ 
+                font-size: 1em;
+                text-align: center;
+            }
+            ul{ 
+                font-size: 0.65em;
+                list-style: none;
+                padding-top:10px;
+                padding-left: 20px!important;
+            }
+            #depannage-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    margin-top: 1.5em;
+                }
+                h2{ 
+                    margin-top: -0.4em;
+                    font-size: 1.4em;
+                }
+            }
+            #tarifs{
+                :first-child{
+                    text-align: center;
+                    font-size: 1em;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    margin-top: 1em;
+                }
+
+            }
+        }
+    }
+}
+//End of Accueil Template Style
+
+
+//Photos Template
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    user-select: none;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+#img-photo-template{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.image-filter{
+    margin-top: 1.4em!important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    button{
+        border: none;
+        background-color: #ed0000;
+        color: #fff;
+        width: 10em;
+        padding: 0.5em;
+        border-radius: 5px;
+    }
+}
+
+//End of Photos Template
+
+//Contact Template
+.container-contact{
+    margin: 0 auto;
+    width: 90%;
+}
+.contact{
+    font-size: 1.4em;
+    margin-top: 1rem;
+    p{
+        font-size: 1em;
+        text-align: center;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        margin: 4vw 0;
+    }
+}
+//end of Contact Template
+
+//Installation Sanitare Template
+#sanitaire-main{
+    margin-top: 2rem;
+    ul{
+        list-style: none;
+        li{
+            i{
+                color: red;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+}
+
+
+//Depannage template
+.container-depannage{
+
+    margin-top: 2rem; 
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        a{  
+            margin: 0 2rem;
+            button{
+                width: 55vw;
+                border: 1px solid red;
+                background-color: red;
+                color: #fff;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+//Tarifs template
+.container-tarifs{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 4em;
+        color: red;
+    }
+    p{
+        font-size: 2em;
+        margin-top: -0.7em;
+
+    }
+}
+@media all and (min-width:1440px){
+    .container{
+        padding: 0;
+        margin: 0;
+        max-width: 90%;
+    }
+
+    #navbarNavDropdown{
+        ul{
+        font-size: 1.6em!important;
+        }
+    }
+    .nav-link[aria-current] {
+        background-color: #1d3557;
+        padding-top: 30px!important;
+        padding-bottom: 30px;
+    }
+    .nav-link{
+        padding-top: 30px!important;
+    
+    }
+    .brendi{
+        padding-top: 10px;
+        font-size: 2.5em!important;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    #logo-img{
+        padding-top: 12px;
+        padding-left: 5px;
+        margin-right: 15px!important;
+        width: 50px!important;
+        height: 50px!important;
+    }
+    .description{
+        display: flex;
+        background-color:#eaeaea;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        .left-side{
+            width: 50%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            :first-child{
+                font-size: 3em;
+
+            }
+            :nth-child(2){
+                font-size: 2em;
+            }
+
+        }
+        .right-side{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 450px;
+                height: 340px;
+            }
+        }
+    }
+
+    #accueil-boxes{
+        background-color: #ed0000;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+        gap:1rem;
+        a{  
+            color: #fff;
+            .boxes-a{
+                background-color: rgba($color: #fdfdfd, $alpha: 0.15);
+                width: 22rem;
+                height: 16rem;
+                padding: 1rem;
+                border-radius: 5px;
+                h3{ 
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+                ul{ 
+                    font-size: 1.2em;
+                    list-style: none;
+                    padding-top:0;
+                    padding-left: 0;
+                    
+                }
+                #depannage-box{
+                    
+                    p{
+                        font-size: 1.35em;
+                        text-align: center;
+                    }
+                    :nth-child(2){
+                        font-weight: bold;
+                        font-size: 2em;
+                        text-align: center;
+                    }
+                    h2{
+                        text-align: center;
+                        font-size: 3em;
+                    }
+                }
+                #tarifs{
+                    :first-child{
+                        text-align: center;
+                        font-size: 4.1em;
+                        font-weight: bold;
+                        padding-top: 10px;
+                    }
+                    :nth-child(2){
+                        font-size: 2em;
+                        padding-left: 0.9rem;
+                        margin-top: -1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    // Contact
+    #iframe-id{
+        width: 100%;
+        height: 300px;
+    }   
+
+    .container-contact{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .contact{
+        font-size: 1.8em;
+        margin-top: 1rem;
+        p{
+            font-size: 1em!important;
+            text-align: center;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            margin: 4vw 0;
+        }
+    }
+
+
+    // Sanitaire template
+    //Installation Sanitare Template
+    #sanitaire-main{
+        margin: 0 auto;
+        margin-top: 2rem!important;
+        font-size: 2em;
+        width: 85%;
+        ul{
+            list-style: none;
+            li{
+                i{
+                    color: red;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    //Depannage template
+    .container-depannage{
+
+        margin-top: 2rem; 
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{ 
+
+                font-size: 2em;
+            }
+            p{
+                font-size: 1.4em;
+            }
+            a{  
+                font-size: 2em;
+                margin: 0 2rem;
+                button{
+                    width: 55vw;
+                    border: 1px solid red;
+                    background-color: red;
+                    color: #fff;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    //Tarifs template
+    .container-tarifs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+}
+
+@media all and (min-width:960px) and (max-width: 1024px) {
+    /* put your css styles in here */
+    .brendi{
+        padding-top: 10px;
+        font-size: 3.2em;
+        font-weight: bold;
+    }
+    #logo-img{
+        padding-top: 12px;
+        padding-left: 5px;
+        margin-right: 10px;
+    }
+    #navbarNavDropdown{
+        font-size: 1em;
+        justify-content: center;
+    }
+    nav{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .container{
+        width: 100%!important;
+        margin: 0!important;
+        padding: 0!important;
+    }
+    #main-nav{
+        padding: 0 8px;
+
+    }
+
+    .nav-link[aria-current] {
+        background-color: #1d3557;
+        padding-top: 42px;
+        padding-bottom: 30px;
+    }
+    .nav-link{
+        padding-top: 42px;
+        padding-left: 10px;
+    }
+
+
+    //Accueil
+    //Accueil Template Style
+    .description{
+        display: flex;
+        background-color:#eaeaea;
+        padding-bottom: 20px;
+        .left-side{
+            width: 50%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            :first-child{
+                font-size: 2.3em;
+            }
+            :nth-child(2){
+                font-size: 1.53em;
+            }
+            :nth-child(3){
+                font-size: 1.9em;
+            }
+        }
+        .right-side{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 300px;
+                height: 230px;
+            }
+        }
+    }
+
+
+    //End of accueil
+
+    //Contact Page
+    #iframe-id{
+        width: 100%;
+        height: 300px;
+    } 
+    .container-contact{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .contact{
+        font-size: 1.7em;
+        margin-top: 1rem;
+        p{
+            font-size: 1em!important;
+            text-align: center;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            margin: 4vw 0;
+        }
+    }
+
+    // Sanitaire
+        // Sanitaire template
+    //Installation Sanitare Template
+    #sanitaire-main{
+        margin: 0 auto;
+        margin-top: 2rem!important;
+        font-size: 2em;
+        width: 85%;
+        ul{
+            list-style: none;
+            li{
+                i{
+                    color: red;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+     //Depannage template
+     .container-depannage{
+
+        margin-top: 2rem; 
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{ 
+
+                font-size: 2em;
+            }
+            p{
+                font-size: 1.4em;
+            }
+            a{  
+                font-size: 2em;
+                margin: 0 2rem;
+                button{
+                    width: 55vw;
+                    border: 1px solid red;
+                    background-color: red;
+                    color: #fff;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    //Tarifs template
+    .container-tarifs{
+        display: flex;
+    }
+}
+  
+@media all and (min-width:801px) and (max-width: 959px) {
+    /* put your css styles in here */
+    .brendi{
+        padding-top: 10px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    #logo-img{
+        width: 70px;
+        height: 50px;
+    }
+    #navbarNavDropdown{
+        font-size: 1em;
+        justify-content: center;
+        width: 100%!important;
+    }
+    nav{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .container{
+        width: 100%!important;
+    }
+    #main-nav{
+        padding: 0 8px;
+    
+    }
+    
+    .nav-link[aria-current] {
+        padding-top:30px;
+    }
+    .nav-link{
+        padding-top: 30px;
+        padding-left: 0;
+    }
+    #iframe-id{
+        width: 100%;
+        height: 200px;
+    } 
+
+        // Sanitaire template
+    //Installation Sanitare Template
+    #sanitaire-main{
+        margin: 0 auto;
+        margin-top: 2rem!important;
+        font-size: 1.7em;
+        width: 85%;
+        ul{
+            list-style: none;
+            li{
+                i{
+                    color: red;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+    
+}
+  
+@media all and (min-width:769px) and (max-width: 800px) {
+    /* put your css styles in here */
+}
+  
+@media all and (min-width:569px) and (max-width: 768px) {
+    .brendi{
+        padding-top: 10px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    #logo-img{
+        width: 70px;
+        height: 50px;
+    }
+    #navbarNavDropdown{
+        font-size: 1em;
+        justify-content: center;
+        width: 100%!important;
+    }
+    nav{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .container{
+        width: 90%!important;
+        padding: 0;
+    }
+    #main-nav{
+        padding: 0 8px;
+    
+    }
+    
+    .nav-link[aria-current] {
+        padding-top:30px;
+    }
+    .nav-link{
+        padding-top: 30px;
+        padding-left: 0;
+    }
+    //Accueil Page
+    .description{
+        display: flex;
+        background-color:#eaeaea;
+        padding: 10px 0;
+        .left-side{
+            width: 50%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            :first-child{
+                font-size: 1.5em;
+            }
+            :nth-child(2){
+                font-size: 1em;
+            }
+            h2{
+                font-size: 1.54em;
+            }
+        }
+        .right-side{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+    #img-photo-template{
+        
+        img{
+            width: 100%!important;
+            height: 400px!important;
+            margin-bottom: 0.5em!important;
+        }
+    }
+    //contact template
+    #iframe-id{
+        width: 100%;
+        height: 200px;
+    } 
+    .container-contact{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .contact{
+        font-size: 1em;
+        margin-top: 1rem;
+        p{
+            font-size: 1em!important;
+            text-align: center;
+
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            margin: 4vw 0;
+        }
+    }
+
+    //sanitaire
+        // Sanitaire template
+    //Installation Sanitare Template
+    #sanitaire-main{
+        margin: 0 auto;
+        margin-top: 2rem!important;
+        font-size: 2em;
+        width: 85%;
+        ul{
+            list-style: none;
+            li{
+                i{
+                    color: red;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
+  
+@media all and (min-width:481px) and (max-width: 568px) {
+    .brendi{
+        padding-top: 10px;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    #logo-img{
+        width:50px; 
+        height:60px;
+        padding-bottom: 3px;
+    }
+    #navbarNavDropdown{
+        font-size: 1em;
+        justify-content: center;
+    }
+    nav{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .container{
+        width: 100%!important;
+    }
+    #main-nav{
+        padding: 0 8px;
+    
+    }
+    
+    .nav-link[aria-current] {
+        padding:0;
+    }
+    .nav-link{
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    //Accueil Page
+    .description{
+        display: flex;
+        background-color:#eaeaea;
+        padding: 10px 0;
+        .left-side{
+            width: 50%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            :first-child{
+                font-size: 1.2em;
+            }
+            :nth-child(2){
+                font-size: 0.8em;
+            }
+
+        }
+        .right-side{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+
+    #img-photo-template{
+        
+        img{
+            width: 100%!important;
+            height: 400px!important;
+            margin-bottom: 0.5em!important;
+        }
+    }
+}
+  
+@media all and (min-width:321px) and (max-width: 480px) {
+    .brendi{
+        padding-top: 10px;
+        font-size: 1.5em!important;
+        font-weight: bold;
+    }
+    #logo-img{
+        width:30px; 
+        height:40px;
+        padding-bottom: 3px;
+    }
+    #navbarNavDropdown{
+        font-size: 1em;
+        justify-content: center;
+    }
+    nav{
+        display: flex!important;
+        flex-direction: column!important;
+
+    }
+    .container{
+        width: 100%!important;
+    }
+    #main-nav{
+        padding: 0 8px;
+    
+    }
+    
+    .nav-link[aria-current] {
+        padding:0;
+    }
+    .nav-link{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    //Accueil Page
+    .description{
+        display: flex;
+        background-color:#eaeaea;
+        padding: 10px 0;
+        height: 45vw;
+        .left-side{
+            width: 50%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 12px;
+            :first-child{
+                font-size: 0.9em;
+            }
+            :nth-child(2){
+                font-size: 0.6em;
+            }
+            h2{
+                font-size: 0.8em;
+            }
+        }
+        .right-side{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 150px;
+                height: 100px;
+            }
+        }
+    }
+
+    #accueil-boxes{
+        background-color: #ed0000;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+        gap:1rem;
+        a{  
+            color: #fff;
+            .boxes-a{
+                background-color: rgba($color: #fdfdfd, $alpha: 0.15);
+                width: 22rem;
+                height: 16rem;
+                padding: 1rem;
+                border-radius: 5px;
+                h3{ 
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+                ul{ 
+                    font-size: 1.2em;
+                    list-style: none;
+                    padding-top:0;
+                    padding-left: 0;
+                    
+                }
+                #depannage-box{
+                    
+                    p{
+                        font-size: 1.35em;
+                        text-align: center;
+                    }
+                    :nth-child(2){
+                        font-weight: bold;
+                        font-size: 2em;
+                        text-align: center;
+                    }
+                    h2{
+                        text-align: center;
+                        font-size: 3em;
+                    }
+                }
+                #tarifs{
+                    :first-child{
+                        text-align: center;
+                        font-size: 4.1em;
+                        font-weight: bold;
+                        padding-top: 10px;
+                    }
+                    :nth-child(2){
+                        font-size: 2em;
+                        padding-left: 0.9rem;
+                        margin-top: -1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Photo Template
+
+    #img-photo-template{
+        display: flex;
+        flex-wrap: wrap;
+        
+        img{
+            width: 100%!important;
+            height: 400px!important;
+            margin-bottom: 0.5em!important;
+        }
+    }
+    #iframe-id{
+        width: 100%;
+        height: 200px;
+    } 
+
+    .container-contact{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .contact{
+        font-size: 1em;
+        margin-top: 1rem;
+        p{
+            font-size: 1em!important;
+            text-align: center;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            margin: 4vw 0;
+            #phones-mails{
+                width: 50%;
+                #email{
+                    font-size: 0.6em!important;
+                }
+            }
+            .adress{
+                width: 50%;
+            }
+        }
+    }
+
+
+    // Sanitaire template
+    //Installation Sanitare Template
+    #sanitaire-main{
+        margin: 0 auto;
+        margin-top: 2rem!important;
+        font-size: 1.4em;
+        width: 85%;
+        ul{
+            list-style: none;
+            li{
+                i{
+                    color: red;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    //Tarifs template
+    .container-tarifs{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+
+        h1{
+            font-size: 3em;
+            color: red;
+
+        }
+        h2{
+            font-size: 1.6em;
+            text-align: center;
+        }
+        p{
+            font-size: 1.5em;
+            margin-top: -0.7em;
+            
+        }
+        h4{
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+}
+  
+@media all and (min-width:0px) and (max-width: 320px) {
+    /* put your css styles in here */
+    .brendi{
+        padding-top: 10px;
+        font-size: 1em!important;
+        font-weight: bold;
+    }
+    #logo-img{
+        width:30px; 
+        height:40px;
+        padding-bottom: 3px;
+    }
+    #navbarNavDropdown{
+        font-size: 1em;
+        justify-content: center;
+    }
+    nav{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .container{
+        width: 100%!important;
+        display: flex!important;
+    }
+    #main-nav{
+        padding: 0 8px;
+    
+    }
+    
+    .nav-link[aria-current] {
+        padding:0;
+    }
+    .nav-link{
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    //Accueil Page
+    .description{
+        display: flex;
+        background-color:#eaeaea;
+        padding: 10px 0;
+        .left-side{
+            width: 50%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            :first-child{
+                font-size: 0.7em;
+            }
+            :nth-child(2){
+                font-size: 0.47em;
+            }
+            h2{
+                font-size: 0.8em;
+            }
+        }
+        .right-side{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100px;
+                height: 60px;
+            }
+        }
+
+    }
+    #img-photo-template{
+        img{
+            width: 80%!important;
+            margin-bottom: 0.5em !important;
+        }
+    }
+
+    //Contact template
+    #iframe-id{
+        width: 100%;
+        height: 100px;
+    } 
+    
+    .container-contact{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .contact{
+        font-size: 1em;
+        margin-top: 1rem;
+        p{
+            font-size: 1em!important;
+            text-align: center;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            margin: 4vw 0;
+            #phones-mails{
+                width: 50%;
+                #email{
+                    font-size: 0.6em!important;
+                }
+            }
+            .adress{
+                width: 50%;
+            }
+        }
+    }
+        // Sanitaire template
+    //Installation Sanitare Template
+    #sanitaire-main{
+        margin: 0 auto;
+        margin-top: 2rem!important;
+        font-size: 1.4em;
+        width: 85%;
+        ul{
+            list-style: none;
+            li{
+                i{
+                    color: red;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
